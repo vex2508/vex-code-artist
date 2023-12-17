@@ -1,0 +1,727 @@
+
+body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to bottom, #6E5773, #3E2F40);
+    height: 100vh;
+  }
+  
+  .headerAndColumn{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    background: linear-gradient(to bottom, cadetblue, #333333);
+    margin: 0;
+  }
+  .logo {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .logoPicture {
+    width: 10rem;
+    height: 15rem;
+    background-image: url('img/vexLogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .contacts {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .buttonSearchHolder {
+    margin-right: auto;
+    margin-left: auto;
+    margin: 2rem;
+  }
+
+  .language {
+    font-size: 1rem;
+    color: brown;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, lightgray, white);
+    padding: 1rem;
+    display: inline;
+    visibility: hidden;
+  }
+
+  .language:hover {
+    background: linear-gradient(to bottom, white, lightgray);
+  }
+
+  .contactUs {
+    font-size: 1rem;
+    background: linear-gradient(to bottom right, red, darkred);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  .contactUs:hover {
+    background: linear-gradient(to bottom right, darkred, red);
+  }
+  
+  .linksBellowButtonSearchHolder a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-left: 0.25rem solid white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .linksBellowButtonSearchHolder a:hover{
+    color: red;
+  }
+.backgroundOverlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#container {
+    width: 60vw;
+    height: 75vh;
+    border: 0.25rem solid green;
+    margin: 2vh auto;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url('webAppModelOneImage/weaponLover.jpg');
+    background-position: center;
+    font-weight: bolder;
+    background-size: 100% 100%;
+    
+}
+
+#screen {
+    background-color: black;
+    width: 90%;
+    border: 2px solid green;
+    margin: 1rem auto;
+    height: 50vh;
+    border-radius: 1rem;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    position: relative;   
+}
+
+#screen p {
+    width: 90%;
+    height: 25px;
+    margin: auto;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+    color: brown;
+    display: block;
+}
+
+
+#container button {
+    width: 50%;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0.25rem solid white;
+    color: white;
+    background-color: darkgreen;
+    display: block;
+}
+
+
+
+#timerContainerLevelOne {
+    background-color: rgba(228, 236, 233, 0.5);
+    font-size: 25px;
+    margin: auto;
+    color: red;
+}
+
+
+.circleContainer {
+    width: 75%;
+    margin: auto;
+    display: flex; 
+    display: none;
+}
+
+.circleContainerItems {
+   flex-grow: 1;
+   background-color: rgb(31, 158, 105);
+   color: black;
+   border-radius: 100%;
+   padding: 0.25rem;
+   width: 2rem;
+   height: 4rem;
+}
+
+
+.questionContainerLevelOne {
+    height: 5rem;
+    width: 80%;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: rgba(32, 218, 141, 0.75);
+    border: 0.25rem solid white;
+    display: none;
+    padding: 1rem;
+    color: red;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+
+#answersContainerEnglishLevelOne {
+   
+    width: 100%;
+    margin: auto;
+    height: 15vh;
+   
+    display: none;
+    grid-template-areas: 
+        "1 2"
+        "3 4";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+}
+
+#answersContainerEnglishLevelOne button {
+    background-color: rgba(32, 218, 141, 0.5);
+    width: 90%;
+    position: relative;
+    color: white;
+}
+
+#answersContainerEnglishLevelOne button:active {
+    background-image: url('webAppModelOneImage/m16Rifle.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: red;
+}
+
+#answersContainerSerbianLevelOne {
+   
+    width: 100%;
+    margin: auto;
+    height: 15vh;
+   
+    display: none;
+    grid-template-areas: 
+        "1 2"
+        "3 4";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+}
+
+#answersContainerSerbianLevelOne button {
+    background-color: rgba(32, 218, 141, 0.5);
+    width: 90%;
+    position: relative;
+    color: white;
+}
+
+#answersContainerSerbianLevelOne button:active {
+    background-image: url('webAppModelOneImage/ak47Rifle.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: red;
+}
+
+#doorHolder {
+    width: 100%;
+    height: 10%;
+    z-index: 0;
+    display: none;
+    position: relative;
+}
+
+
+
+
+#answersContainerEnglishLevelTwo {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+   
+    display: none;
+    grid-template-areas: 
+        "1 2"
+        "3 4"
+        "5 6";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+}
+
+#answersContainerEnglishLevelTwo button {
+    background-color: rgba(32, 218, 141, 0.5);
+    width: 90%;
+    position: relative;
+    display: none;
+    color: white;
+}
+
+
+
+#answersContainerSerbianLevelTwo {
+   
+    width: 100%;
+    margin: auto;
+    height: 250px;
+   
+    display: none;
+    grid-template-areas: 
+        "1 2"
+        "3 4"
+        "5 6";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+}
+
+#answersContainerSerbianLevelTwo button {
+    background-color: rgba(32, 218, 141, 0.5);
+    width: 90%;
+    position: relative;
+    display: none;
+    color: white;
+}
+
+
+
+.deleteOrConfirmAnswersContainerLevelTwo {
+    display: flex;
+}
+
+
+
+
+.cubeContainer {
+    width: 60%;
+    margin: auto;
+    display: none;
+}
+
+.cubeContainerItems {
+   flex-grow: 1;
+   background-color: rgb(31, 158, 105);
+   color: black;
+   border-radius: 50%;
+   padding: 20px;
+   margin: 0px 10px;
+   width: 20px;
+   height: 20px;
+}
+
+
+.confirmAnswersLevelTwo:active {
+    background-image: url('webAppModelOneImage/handGrenade.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.theLastColumn {
+  width: 100%;
+  height: 30vh;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to top, cadetblue, #333333);
+}
+
+
+.columnOneTwoThree {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  grid-template-areas: 
+  "fir sec thi";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5%;
+}
+
+.firstPartColumn{
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  border-right: 0.25rem solid white;
+  padding-right: 5%;
+}
+
+.firstPartColumn img  {
+  width: 10rem;
+  height: 7.5rem;
+  cursor: pointer;
+}
+
+.firstPartColumn a {
+  font-weight: bold;
+  color: white;
+}
+
+.secondPartColumn{
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.secondPartColumn a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.thirdPartColumn{
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 5%;
+  border-left: 0.25rem solid white;
+}
+
+
+.secondPartColumnGridInside {
+display: grid;
+width: 80%;
+height: 80%;
+grid-template-areas: 
+"one two" 
+"thre";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+margin-left: auto;
+margin-right: auto;
+}
+
+.thirdPartColumnBox {
+  width: 50%;
+  height: auto;
+  border: 0.20rem dotted white;
+  border-radius: 5%;
+  margin-top: 5%;
+  padding: 0.5rem;
+}
+
+.subscribe {
+  margin-top: 2.5%;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribe:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+
+h2{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+p{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+.columnOneTwoThree {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  grid-template-areas: 
+  "fir sec thi";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5%;
+}
+
+.firstPartColumn{
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  border-right: 0.25rem solid white;
+  padding-right: 5%;
+}
+
+.firstPartColumn img  {
+  width: 10rem;
+  height: 7.5rem;
+  cursor: pointer;
+}
+
+.firstPartColumn a {
+  font-weight: bold;
+  color: white;
+}
+
+.secondPartColumn{
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.secondPartColumn a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.thirdPartColumn{
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 5%;
+  border-left: 0.25rem solid white;
+}
+
+
+.secondPartColumnGridInside {
+display: grid;
+width: 80%;
+height: 80%;
+grid-template-areas: 
+"one two" 
+"thre";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+margin-left: auto;
+margin-right: auto;
+}
+
+.thirdPartColumnBox {
+  width: 50%;
+  height: auto;
+  border: 0.20rem dotted white;
+  border-radius: 5%;
+  margin-top: 5%;
+  padding: 0.5rem;
+}
+
+.subscribe {
+  margin-top: 2.5%;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribe:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+
+h2{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+p{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+
+.theLastColumn {
+  width: 100%;
+  height: 30vh;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to top, cadetblue, #333333);
+}
+
+@media  (max-width: 999px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+    
+    .language{
+        font-size: 1.5rem;
+      }
+      .contactUs{
+        font-size: 1.5rem;
+      }
+      .linksBellowButtonSearchHolder a{
+        font-size: 1.5rem;
+      }
+
+
+
+@media (max-width: 999px) and (orientation: landscape) {
+
+.header{
+    display: none;
+}
+
+.body{
+    height: auto;
+    width: 100%;
+}
+
+ #container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+ }
+
+ #screen {
+    height: 65vh;
+    width: 97.5%;
+    margin-top: 0;
+}
+
+h1{
+    display: none;
+}
+
+
+
+#screen p {
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+#container button {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1.5rem;
+}
+.theLastColumn{
+  display: none;
+}
+
+.columnOneTwoThree{
+  display: none;
+}
+
+
+  }
+
+  @media (max-width: 999px) and (orientation: portrait) {
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+    header{
+      height: 20vh;
+      width: 100%;
+    }
+   .textUnderButtonOneLearnMore {
+     font-size: 1.5rem;
+     }
+     .headerAndColumn{
+      width: 100%;
+      height: 100vh;
+    }
+    .firstColumnImgAndText {
+      height: 150vh;
+      width: 100%;
+    }
+  
+   #container {
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    border-top: 0.25rem solid green;
+    border-bottom: 0.25rem solid green;
+    border-left: 0;
+    border-right: 0;
+   }
+
+   #screen {
+    height: 45vh;
+    width: 95%;
+}
+   
+
+  #screen p {
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 0;
+}
+
+#container button {
+    width: 95%;
+    margin: 10px auto;
+    font-size: 3rem;
+    height: 8rem;   
+}
+
+#container button:hover {
+   display: none;
+}
+
+.theLastColumn {
+  height: auto;
+  width: 100vw;
+  display: flex;
+}
+.columnOneTwoThree{
+  width: 100vw;
+  height: AUTO;
+}
+
+}
+
+
+}

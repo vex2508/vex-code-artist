@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vexQuiz</title>
+    <link rel="stylesheet" type="text/css" href="webAppModelOne.style.css">
+</head>
+<body>
+    <div class="headerAndColumn">
+    <div class="header">
+        <div class="logo">
+            <a href="https://vex-code-artist.neocities.org/">
+            <div class="logoPicture" alt="loading logo"></div>
+            </a>
+        </div>
+        <div class="contacts">
+            <div class="buttonSearchHolder">
+                <button id="languageEnglish" class="language">ENG/SRB</button>
+                <button id="languageSerbian" class="language" style="display:none">SRB/ENG</button>
+                <button id="contactEnglish" style="display: inline;" class="contactUs">CONTACT</button>
+                <button id="contactSerbian" style="display: none;" class="contactUs">KONTAKT</button>
+            </div>
+            <div id="linksEnglish" style="display:inline" class="linksBellowButtonSearchHolder">
+                <a href="https://vex-code-artist.neocities.org/">HOME</a>
+                <a href="https://vex-code-artist.neocities.org/vexModels">MODELS</a>
+                <a href="https://vex-code-artist.neocities.org/vexGalleryEnglish" style="border-right: 0.25rem solid white;">GALLERY</a>
+            </div>
+            <div id="linksSerbian" style="display:none" class="linksBellowButtonSearchHolder">
+                <a href="https://vex-code-artist.neocities.org/">POČETNA</a>
+                <a href="https://vex-code-artist.neocities.org/vexModels">MODELI</a>
+                <a href="https://vex-code-artist.neocities.org/vexGalleryEnglish" style="border-right: 0.25rem solid white;">GALERIJA</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="backgroundOverlay">
+            <h1>vexQuiz</h1>
+            <div id="screen">
+                <p id="screenLine1" style="margin-top: 0px"></p>
+                <div id="doorHolder">
+                    <div id="leftDoor">vex</div>
+                    <div id="rightDoor">Quiz</div>
+                </div>
+                <p id="screenLine2"></p>
+                <div class="cubeContainer" id="cubeContainer">
+                    <div class="cubeContainerItems"></div>
+                    <div class="cubeContainerItems"></div>
+                    <div class="cubeContainerItems"></div>
+                    <div class="cubeContainerItems"></div>
+                    <div class="cubeContainerItems"></div>
+                </div>
+                <div class="circleContainer" id="circleContainer">
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems"></div>
+                    <div class="circleContainerItems" style="display: none;">11</div>
+                </div>
+                <p id="screenLine3"></p>
+                <div class="questionContainerLevelTwo" id="questionContainerEnglishLevelTwo" style="display: none;"></div>
+                <div class="questionContainerLevelTwo" id="questionContainerSerbianLevelTwo" style="display: none;"></div>
+                <div class="questionContainerLevelOne" id="questionContainerEnglishLevelOne" style="display: none;"></div>
+                <div class="questionContainerLevelOne" id="questionContainerSerbianLevelOne" style="display: none;"></div>
+                <p id="screenLine4"></p>
+                <p id="screenLine5"></p>
+                <p id="screenLine6"></p>
+                <p id="screenLine7"></p>
+            </div>
+    
+            <div id="answersContainerEnglishLevelTwo">
+                <button id="answerEnglishLevelTwoA"></button>
+                <button id="answerEnglishLevelTwoB"></button>
+                <button id="answerEnglishLevelTwoC"></button>
+                <button id="answerEnglishLevelTwoD"></button>
+                <button id="answerEnglishLevelTwoE"></button>
+                <div class="deleteOrConfirmAnswersContainerLevelTwo" id= "deleteOrConfirmAnswersContainerEnglishLeveLTwo">
+                    <button class="deleteAnswersLevelTwo" id="deleteAnswersEnglishLevelTwo" style="display:none">delete</button>
+                    <button class="confirmAnswersLevelTwo" id="confirmAnswersEnglishLevelTwo" style="display:none">confirm</button>></button>
+                </div>
+            </div>
+    
+            <div id="answersContainerSerbianLevelTwo">
+                <button id="answerSerbianLevelTwoA"></button>
+                <button id="answerSerbianLevelTwoB"></button>
+                <button id="answerSerbianLevelTwoC"></button>
+                <button id="answerSerbianLevelTwoD"></button>
+                <button id="answerSerbianLevelTwoE"></button>
+                <div class="deleteOrConfirmAnswersContainerLevelTwo" id="deleteOrConfirmAnswersContainerSerbianLeveLTwo">
+                <button class="deleteAnswersLevelTwo" id="deleteAnswersSerbianLevelTwo"style="display:none">obrisi</button>
+                <button class="confirmAnswersLevelTwo" id="confirmAnswersSerbianLevelTwo" style="display:none">potvrdi</button>
+                </div>
+            </div>
+    
+    
+            <div id="answersContainerEnglishLevelOne">
+                <button id="answerEnglishLevelOneA"></button>
+                <button id="answerEnglishLevelOneB"></button>
+                <button id="answerEnglishLevelOneC"></button>
+                <button id="answerEnglishLevelOneD"></button>
+            </div>
+    
+            <div id="answersContainerSerbianLevelOne">
+                <button id="answerSerbianLevelOneA"></button>
+                <button id="answerSerbianLevelOneB"></button>
+                <button id="answerSerbianLevelOneC"></button>
+                <button id="answerSerbianLevelOneD"></button>
+            </div>
+    
+            <button id="playLevelTwo" style="display: none">Play level 2</button>
+            <button id="igrajNivoDva" style="display: none">Igraj nivo 2</button>
+    
+            <button id="menu" style="display: none;"></button>
+            <button id="izbornik" style="display: none;"></button>
+    
+            <button id="startLevelTwo" style="display:none">Start level 2</button>
+            <button id="pokreniNivoDva" style="display:none">Pokreni nivo 2</button>
+    
+            <button id="playLevelOne" style="display: none">Play</button>
+            <button id="igrajNivoJedan" style="display: none">Igraj</button>
+            <button id="backFromLevelOne" style="display: none"></button>
+            <button id="nazadIzNivoaJedan" style="display: none"></button>
+    
+            <button id="start">Start</button>
+            <button id="pokreni" style="display: none">Pokreni</button>
+            <button id="language">Language</button>
+            <button id="jezik" style="display: none">Jezik</button>
+    
+            <button id="pickLanguage" style="display: none">Pick language</button>
+            <button id="izaberiJezik" style="display: none;">Izaberi jezik</button>
+            <button id="backFromLanguage" style="display: none"></button>
+            <button id="nazadIzJezika" style="display: none"></button>
+        </div>
+        </div>
+    </div>
+    <div id="theLastColumnEnglish" class="theLastColumn">
+        <div class="columnOneTwoThree">
+        <div class="firstPartColumn">
+            <a href="https://vex-code-artist.neocities.org/">
+            <img src="img/vexLogo.png" alt="Logo">
+            </a>
+            <a href="mailto:vexmajstor@gmail.com"><p>vexmajstor@gmail.com</p></a>
+        </div>
+        <div class="secondPartColumn">
+            <div class="secondPartColumnGridInside">
+            <a href="https://vex-code-artist.neocities.org/">HOME</a>
+            <a href="https://vex-code-artist.neocities.org/vexModels">MODELS</a>
+            </div>
+        </div>
+        <div class="thirdPartColumn">
+            <div class="thirdPartColumnBox">
+                <h3>Join my Mailing List</h3>
+                <p>Get the latest news about Vex Code Artist and more!</p>
+                <button class="subscribe" id="subscribeEnglish">SUBSCRIBE</button>
+            </div>
+        </div>
+        </div>
+</div>
+<div id="theLastColumnSerbian" style="display:none" class="theLastColumn">
+    <div class="columnOneTwoThree">
+    <div class="firstPartColumn">
+        <a href="https://vex-code-artist.neocities.org/">
+        <img src="img/vexLogo.png" alt="Logo">
+        </a>
+        <a href="mailto:vexmajstor@gmail.com"><p>vexmajstor@gmail.com</p></a>
+    </div>
+    <div class="secondPartColumn">
+        <div class="secondPartColumnGridInside">
+        <a href="https://vex-code-artist.neocities.org/">POČETNA</a>
+        <a href="https://vex-code-artist.neocities.org/vexModels">MODELI</a>
+        </div>
+    </div>
+    <div class="thirdPartColumn">
+        <div class="thirdPartColumnBox">
+            <h3>Pridružite se mojoj mailing listi</h3>
+            <p>Najnovije vesti o Vex Code Artistu i još mnogo više!</p>
+            <button class="subscribe" id="subscribeSerbian">PRIJAVI SE</button>
+        </div>
+    </div>
+    </div>
+</div>
+    <script src="webAppModelOne.script.js"></script>
+</body>
+</html>
+
+
+
+

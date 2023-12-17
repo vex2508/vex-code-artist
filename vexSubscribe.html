@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vex-code-artist</title>
+    <link rel="stylesheet" type="text/css" href="vexSubscribe.style.css">
+</head>
+<body>
+    <div class="headerAndColumn">
+    <div class="header">
+        <div class="logo">
+            <a href="https://vex-code-artist.neocities.org/">
+            <div class="logoPicture" alt="loading logo"></div>
+            </a>
+        </div>
+        <div class="contacts">
+            <div class="buttonSearchHolder">
+                <button id="languageEnglish" class="language">ENG/SRB</button>
+                <button id="languageSerbian" class="language" style="display:none">SRB/ENG</button>
+                <button id="contactEnglish" style="display: inline;" class="contactUs">CONTACT</button>
+                <button id="contactSerbian" style="display: none;" class="contactUs">KONTAKT</button>
+            </div>
+            <div id="linksEnglish" style="display:inline" class="linksBellowButtonSearchHolder">
+                <a href="https://vex-code-artist.neocities.org/">HOME</a>
+                <a href="https://vex-code-artist.neocities.org/vexModels">MODELS</a>
+                <a href="https://vex-code-artist.neocities.org/vexGalleryEnglish" style="border-right: 0.25rem solid white;">GALLERY</a>
+            </div>
+            <div id="linksSerbian" style="display:none" class="linksBellowButtonSearchHolder">
+                <a href="https://vex-code-artist.neocities.org/">POČETNA</a>
+                <a href="https://vex-code-artist.neocities.org/vexModels">MODELI</a>
+                <a href="https://vex-code-artist.neocities.org/vexGalleryEnglish" style="border-right: 0.25rem solid white;">GALERIJA</a>
+            </div>
+        </div>
+    </div>
+        <div class="firstColumn">
+        <div class="subscribeContainer">
+            <form id="subscribeForm">
+                <label for="email">Email:</label>
+                <button type="button" onclick="subscribe()">Subscribe / Prijavi se</button>
+                <p id="message"></p>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div id="theLastColumnEnglish" class="theLastColumn">
+        <div class="columnOneTwoThree">
+        <div class="firstPartColumn">
+            <a href="https://vex-code-artist.neocities.org/">
+            <img src="img/vexLogo.png" alt="Logo">
+            </a>
+            <a href="mailto:vexmajstor@gmail.com"><p>vexmajstor@gmail.com</p></a>
+        </div>
+        <div class="secondPartColumn">
+            <div class="secondPartColumnGridInside">
+            <a href="https://vex-code-artist.neocities.org/">HOME</a>
+            <a href="https://vex-code-artist.neocities.org/vexModels">MODELS</a>
+            </div>
+        </div>
+        <div class="thirdPartColumn">
+            <div class="thirdPartColumnBox">
+                <h3>Join my Mailing List</h3>
+                <p>Get the latest news about Vex Code Artist and more!</p>
+                <button class="subscribe" id="subscribeEnglish">SUBSCRIBE</button>
+            </div>
+        </div>
+        </div>
+</div>
+<div id="theLastColumnSerbian" style="display:none" class="theLastColumn">
+    <div class="columnOneTwoThree">
+    <div class="firstPartColumn">
+        <a href="https://vex-code-artist.neocities.org/">
+        <img src="img/vexLogo.png" alt="Logo">
+        </a>
+        <a href="mailto:vexmajstor@gmail.com"><p>vexmajstor@gmail.com</p></a>
+    </div>
+    <div class="secondPartColumn">
+        <div class="secondPartColumnGridInside">
+        <a href="https://vex-code-artist.neocities.org/">POČETNA</a>
+        <a href="https://vex-code-artist.neocities.org/vexModels">MODELI</a>
+        </div>
+    </div>
+    <div class="thirdPartColumn">
+        <div class="thirdPartColumnBox">
+            <h3>Pridružite se mojoj mailing listi</h3>
+            <p>Najnovije vesti o Vex Code Artistu i još mnogo više!</p>
+            <button class="subscribe" id="subscribeSerbian">PRIJAVI SE</button>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="vexSubscribe.script.js"></script>
+</html>

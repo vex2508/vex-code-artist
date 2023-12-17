@@ -1,0 +1,936 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(to bottom, #333333, #007ACC);
+}
+
+.backgroundOverlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+	height: 100vh;
+  z-index: 2;
+}
+
+.backgroundOverlayTwo {
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 100vw;
+	height: auto;
+  z-index: 2;
+}
+
+.headerAndColumn{
+  height: 100vh;
+  width: 100%;
+  border-bottom: 0.5rem black solid;
+  padding: 0;
+  margin: 0;
+}
+
+.secondColumn {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  background: linear-gradient(to bottom, cadetblue, #333333);
+  margin: 0;
+}
+
+.logo {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logoPicture {
+  width: 10rem;
+  height: 15rem;
+  background-image: url('img/vexLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.contacts {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.buttonSearchHolder {
+  margin-right: auto;
+  margin-left: auto;
+  margin: 2rem;
+}
+
+.language {
+  font-size: 1rem;
+  color: brown;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, lightgray, white);
+  padding: 1rem;
+  display: inline;
+    visibility: hidden;
+}
+
+.language:hover {
+  background: linear-gradient(to bottom, white, lightgray);
+}
+.contactUs {
+  font-size: 1rem;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.contactUs:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+.linksBellowButtonSearchHolder a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  border-left: 0.25rem solid white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.linksBellowButtonSearchHolder a:hover{
+  color: red;
+}
+
+
+.firstColumn {
+  height: 80vh;
+  width: 100%;
+}
+
+.firstColumnImgAndText {
+  height: 80vh;
+  width: 100%;
+  background-image: url('websiteModelOneImage/wilcraftFirstColumn.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#firstLineText {
+  padding-left: 5%;
+  padding-top: 2.5%;
+  font-size: 4rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  margin: 0;
+  color:black;
+}
+
+
+#secondLineText {
+  padding-left: 5%;
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  color:white;
+}
+
+.buttonLearnMoreOne {
+  margin-left: 5%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: line-through;
+}
+
+.buttonLearnMoreOne:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+.textUnderButtonOneLearnMore {
+  color: white;
+  margin-left: 2.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.secondColumn {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-areas: 
+  "fir fir fir sec sec sec"
+  "thi thi fou fou fif fif";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  background-color: black;
+  grid-gap: 0.5rem;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 0;
+}
+
+.firstPartGrid {
+  grid-area: fir;
+  padding-top: 20%;
+  background-image: url('websiteModelOneImage/wilcraft2WD.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-style: italic;
+}
+
+.mid {
+  text-align: center;
+}
+
+.mid p{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#midOne {
+  visibility: hidden;
+}
+
+#midTwo {
+  visibility: hidden;
+}
+
+#midThree {
+  visibility: hidden;
+}
+
+#midFour {
+  visibility: hidden;
+}
+
+#midFive {
+  visibility: hidden;
+}
+
+.secondPartGrid {
+  grid-area: sec; 
+  padding-top: 20%;
+  background-image: url('websiteModelOneImage/wilcraft4WD.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow: hidden;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.thirdPartGrid {
+  grid-area: thi;
+  padding-top: 20%;
+  background-image: url('websiteModelOneImage/wilcraftConvenience.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+  color: WHITE;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.fourthPartGrid {
+  grid-area: fou;
+  background-image: url('websiteModelOneImage/wilcraftMobility.webp');
+  padding-top: 20%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+  color: WHITE;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  position: relative;
+}
+
+.fifthPartGrid {
+  grid-area: fif;
+  background-image: url('websiteModelOneImage/wilcraftSafety.webp');
+  padding-top: 20%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+  color: WHITE;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+
+.thirdColumn {
+  width: 100vw;
+  height: auto;
+  background-image: url('websiteModelOneImage/wilcraftAward.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-bottom: 0.5rem solid black;
+  border-top: 0.5rem solid black;
+  text-align: center;
+}
+
+
+.thirdColumn h2{
+  color:white;
+  margin-top: 0;
+  padding: 0%;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.blockAward {
+  display: inline-block; 
+  height: auto;
+  width: 15rem;
+  border-radius: 5px;
+  background-color: rgba(56, 55, 55, 0.9);
+  color: silver;
+  text-align: left;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  font-size: medium;
+  font-style: italic;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: transform 0.5s;
+  cursor:none;
+  border: 0.1rem solid black;
+}
+
+.blockAward:hover {
+  transform: scale(1.10);
+  background-color: rgba(56, 55, 55, 1)
+}
+
+
+
+
+.blockAward-holder {
+  width: 80vw;
+  display:block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blockAward h3{
+  margin-bottom: 1rem;
+}
+
+#viewMoreAwards {
+  margin: 2rem;
+}
+
+
+#fourthColumn {
+  height: 50vh;
+  width: 115vw;
+  border-bottom: 0.5rem solid black;
+  background-color: black;
+  background-position-x:left;
+  display: grid;
+  grid-template-areas: 
+  "firPic secPic thiPic fouPic fifPic"
+  "firPic secPic thiPic fouPic fifPic"
+  "sixPic sixPic thiPic fouPic fifPic"
+  "sixPic sixPic sevPic fouPic fifPic"
+  "sixPic sixPic sevPic fouPic fifPic"
+  "sixPic sixPic sevPic fouPic fifPic";
+  grid-template-columns: 3fr 2fr 4fr 9fr 10fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+}
+
+
+
+.firPic {
+  grid-area: firPic; 
+  background-image: url('websiteModelOneImage/firPicSecGrid.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.secPic {
+  grid-area: secPic; 
+  background-image: url('websiteModelOneImage/secPicSecGrid.jpg');
+  background-size: 100% 100%;
+  background-position: right;
+  position: relative;
+  z-index: 0;
+}
+
+
+.thiPic {
+  grid-area: thiPic;
+  background-image: url('websiteModelOneImage/thiPicSecGrid.jpg');
+  background-size: 100% 100%;
+  background-position: right;
+  position: relative;
+  z-index: 0;
+}
+
+
+.fouPic {
+  grid-area: fouPic;   
+  background-image: url('websiteModelOneImage/fouPicSecGrid.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 0;
+}
+
+
+.fifPic {
+  grid-area: fifPic; 
+  background-image: url('websiteModelOneImage/fifPicSecGrid.jpeg');
+  background-size: 100% 100%;
+  background-position: bottom;
+  position: relative;
+  z-index: 0;
+}
+
+
+.sixPic {
+  grid-area: sixPic;
+  background-image: url('websiteModelOneImage/sixPicSecGrid.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 0;
+}
+
+
+.sevPic {
+  grid-area: sevPic;
+  background-image: url('websiteModelOneImage/sevPicSecGrid.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 0;
+}
+
+
+#naviPicRight {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: url('naviLoveImg/rightArrow.png');
+  border-radius: 50%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 1;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+
+#naviPicLeft {
+  position: relative;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-image: url('naviLoveImg/leftArrow.png');
+  border-radius: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 1;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+
+.fifthColumn {
+  width: 100vw;
+  height: 35vh;
+  margin: 0;
+  background: linear-gradient(to right top, rgb(102, 99, 99), rgb(51, 51, 51) , rgb(0, 0, 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 0.25rem solid white;
+  background-color: black;
+  background-color: black;
+  border-bottom: 0.25rem solid white;
+  text-align: center;
+}
+
+.fifthColumn h2{
+  color:white;
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-style: italic;
+}
+
+.fifthColumn p{
+  color:white;
+  margin-top: 0;
+  padding-top: 1rem;
+  width: 40vw;
+  margin: auto;
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contactUsBottom {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: line-through;
+}
+
+.contactUsBottom:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+
+
+.theLastColumn {
+  width: 100%;
+  height: 30vh;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to top, cadetblue, #333333);
+}
+
+
+.columnOneTwoThree {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  grid-template-areas: 
+  "fir sec thi";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5%;
+}
+
+.firstPartColumn{
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  border-right: 0.25rem solid white;
+  padding-right: 5%;
+}
+
+.firstPartColumn img  {
+  width: 10rem;
+  height: 7.5rem;
+  cursor: pointer;
+}
+
+.firstPartColumn a {
+  font-weight: bold;
+  color: white;
+}
+
+.secondPartColumn{
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.secondPartColumn a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.thirdPartColumn{
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 5%;
+  border-left: 0.25rem solid white;
+}
+
+
+.secondPartColumnGridInside {
+display: grid;
+width: 80%;
+height: 80%;
+grid-template-areas: 
+"one two" 
+"thre";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+margin-left: auto;
+margin-right: auto;
+}
+
+.thirdPartColumnBox {
+  width: 50%;
+  height: auto;
+  border: 0.20rem dotted white;
+  border-radius: 5%;
+  margin-top: 5%;
+  padding: 0.5rem;
+}
+
+.subscribe {
+  margin-top: 2.5%;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribe:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+
+h2{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+p{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+.columnOneTwoThree {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  grid-template-areas: 
+  "fir sec thi";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5%;
+}
+
+.firstPartColumn{
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  border-right: 0.25rem solid white;
+  padding-right: 5%;
+}
+
+.firstPartColumn img  {
+  width: 10rem;
+  height: 7.5rem;
+  cursor: pointer;
+}
+
+.firstPartColumn a {
+  font-weight: bold;
+  color: white;
+}
+
+.secondPartColumn{
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.secondPartColumn a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.thirdPartColumn{
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 5%;
+  border-left: 0.25rem solid white;
+}
+
+
+.secondPartColumnGridInside {
+display: grid;
+width: 80%;
+height: 80%;
+grid-template-areas: 
+"one two" 
+"thre";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+margin-left: auto;
+margin-right: auto;
+}
+
+.thirdPartColumnBox {
+  width: 50%;
+  height: auto;
+  border: 0.20rem dotted white;
+  border-radius: 5%;
+  margin-top: 5%;
+  padding: 0.5rem;
+}
+
+.subscribe {
+  margin-top: 2.5%;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribe:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+
+h2{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+p{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+
+.theLastColumn {
+  width: 100%;
+  height: 30vh;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to top, cadetblue, #333333);
+}
+
+
+@media (max-width: 999px) {
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+ 
+  .language{
+    font-size: 1.5rem;
+  }
+  .contactUs{
+    font-size: 1.5rem;
+  }
+  .linksBellowButtonSearchHolder a{
+    font-size: 1.5rem;
+  }
+
+
+
+
+@media (max-width: 999px) and (orientation: landscape) {
+
+
+  body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+  }
+  .headerAndColumn{
+    width: 100%;
+    height: 200vh;
+  }
+  .firstColumnImgAndText {
+    height: 150vh;
+    width: 100%;
+  }
+
+  .secondColumn{
+    height: 150vh;
+    width: 100%;
+  }
+
+  .textUnderButtonOneLearnMore {
+    font-size: 1rem;
+    }
+    .thirdColumn { 
+      height: auto;
+    }
+    .blockAward {
+      height: 7.5rem;
+    }
+    .backgroundOverlay{
+      height: auto;
+    }
+    .backgroundOverlayTwo {
+      height: auto;
+    }
+
+    #fourthColumn {
+      height: 75vh;
+    }
+
+    .fifthColumn {
+      height: auto;
+    }
+    
+    
+    .fifthColumn p{
+      width: 60vw;
+    }
+
+    .theLastColumn {
+      height: auto;
+      width: 100vw;
+      display: flex;
+    }
+    .columnOneTwoThree{
+      width: 100vw;
+      height: AUTO;
+    }
+
+
+}
+
+
+
+@media (max-width: 999px) and (orientation: portrait) {
+
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header{
+    height: 20vh;
+    width: 100%;
+  }
+ .textUnderButtonOneLearnMore {
+   font-size: 1.5rem;
+   }
+   .headerAndColumn{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .firstColumn {
+    height: 100vh;
+    width: 100%;
+  }
+
+ .backgroundOverlay{
+  height: auto;
+ }
+
+  .secondColumn{
+    height: 50vh;
+    width: 100%;
+  }
+
+
+  .blockAward-holder {
+    width: 70vw;
+    height: 50%;
+  }
+
+  .backgroundOverlayTwo{
+    height: auto;
+  }
+
+  .thirdColumn { 
+    height: auto;
+  }
+
+  .blockAward {
+    height: 7.5rem;
+  }
+
+  #fourthColumn {
+    height: 25vh;
+  }
+
+  .fifthColumn {
+    height: auto;
+  }
+  
+  
+  .fifthColumn p{
+    width: 80vw;
+  }
+
+  .theLastColumn {
+    height: auto;
+    width: 100vw;
+    display: flex;
+  }
+  .columnOneTwoThree{
+    width: 100vw;
+    height: AUTO;
+  }
+}
+}

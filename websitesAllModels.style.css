@@ -1,0 +1,474 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+}
+  
+  .headerAndColumn{
+    height: 100vh;
+    width: 100%;
+    background: url('img/websitesAllModels.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .secondColumn {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .thirdColumn {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, cadetblue, #333333);
+    margin: 0;
+  }
+
+  .logo {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .logoPicture {
+    width: 10rem;
+    height: 15rem;
+    background-image: url('img/vexLogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  .contacts {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .buttonSearchHolder {
+    margin-right: auto;
+    margin-left: auto;
+    margin: 2rem;
+  }
+  .language {
+    font-size: 1rem;
+    color: brown;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, lightgray, white);
+    padding: 1rem;
+    display: inline;
+  }
+  .language:hover {
+    background: linear-gradient(to bottom, white, lightgray);
+  }
+  .contactUs {
+    font-size: 1rem;
+    background: linear-gradient(to bottom right, red, darkred);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .contactUs:hover {
+    background: linear-gradient(to bottom right, darkred, red);
+  }
+  .linksBellowButtonSearchHolder a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-left: 0.25rem solid white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .linksBellowButtonSearchHolder a:hover{
+    color: red;
+  }
+  .columnMid {
+    padding: 0;
+    height: 60vh;
+    width: 100%;
+    padding-top: 5vh;
+  }
+  
+  .columnMidSecond {
+    padding: 0;
+    height: 80%;
+    width: 100%;
+    padding-top: 5vh;
+  }
+  
+  #firstLineText {
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: plum; 
+    margin: 0;
+  }
+  #secondLineText {
+    padding-left: 5%;
+    font-size: 4rem;
+    margin: 0%;
+    font-style: italic;
+    font-weight: bolder;
+    color:cyan;
+  }
+  .buttonLearnMoreOne {
+    margin-left: 5%;
+    margin-top: 2.5%;
+    background: linear-gradient(to bottom right, red, darkred);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .buttonLearnMoreOne:hover {
+    background: linear-gradient(to bottom right, darkred, red);
+  }
+  
+  .textUnderButtonOneLearnMore {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: silver;
+    text-align: left;
+  }
+  .columnBottom {
+    margin: 0;
+    text-align: right;
+    height: 10%;
+    width: 80%;
+  }
+  .naviButton {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-image: url('img/bottomArrow.png');
+    border-radius: 50%;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+  }
+  
+  .gridTwoElement {
+    max-width: 95vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: 
+    "fir sec";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+    border: cyan 0.25rem solid;
+  }
+  .gridTwoElementOne{
+    grid-area: fir;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+#websiteModelOne {
+  background-image: url('websiteModelOneImage/wilcraft2WD.webp');
+}
+
+#websiteModelOne2{
+  background-image: url('websiteModelOneImage/wilcraft4WD.webp');
+}
+
+#websiteModelTwo {
+  background-image: url('websiteModelTwoImage/horusT-shirt.jpg');
+  background-size: contain;
+}
+
+#websiteModelTwo2{
+  background-image: url('websiteModelTwoImage/horusBermudaShorts.jpg');
+  background-size: contain;
+}
+
+
+
+  .gridTwoElementTwo{
+    grid-area: sec;
+    background-image: url('websiteModelOneImage/wilcraft4WD.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .firPicOverlayNoHover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  
+  .firPicOverlay:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  
+.theLastColumn {
+  min-width: 100%;
+  height: 30vh;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to top, cadetblue, #333333);
+  margin: 0%;
+  padding: 0%;
+}
+  
+  
+  .columnOneTwoThree {
+    width: 80%;
+    height: 20vh;
+    display: grid;
+    grid-template-areas: 
+    "fir sec thi";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5%;
+  }
+  
+  .firstPartColumn{
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    border-right: 0.25rem solid white;
+    padding-right: 5%;
+  }
+  
+  .firstPartColumn img  {
+    width: 10rem;
+    height: 7.5rem;
+    cursor: pointer;
+  }
+  
+  .firstPartColumn a {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .secondPartColumn{
+    flex-grow: 1;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .secondPartColumn a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .thirdPartColumn{
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 5%;
+    border-left: 0.25rem solid white;
+  }
+  
+ 
+.secondPartColumnGridInside {
+  display: grid;
+  width: 80%;
+  height: 80%;
+  grid-template-areas: 
+  "one two" 
+  "thre";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  .thirdPartColumnBox {
+    width: 50%;
+    height: auto;
+    border: 0.20rem dotted white;
+    border-radius: 5%;
+    margin-top: 5%;
+    padding: 0.5rem;
+  }
+  
+  .subscribe {
+    margin-top: 2.5%;
+    background: linear-gradient(to bottom right, red, darkred);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .subscribe:hover {
+    background: linear-gradient(to bottom right, darkred, red);
+  }
+  
+  h2{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+  }
+  
+  p{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+  }
+  
+  
+  @media (max-width: 999px) {
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Corrected font-family */
+      background: linear-gradient(45deg, #323232, #1a1a1a);
+    }
+    .language{
+      font-size: 1.5rem;
+    }
+    .contactUs{
+      font-size: 1.5rem;
+    }
+    .linksBellowButtonSearchHolder a{
+      font-size: 1.5rem;
+    }
+    .secondPartColumn {
+      height: 80%;
+    }
+    .secondPartColumnGridInside {
+      height: 80%;
+    }
+  }
+
+  @media (max-width: 999px) and (orientation: landscape) {
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Corrected font-family */
+      background: linear-gradient(45deg, #323232, #1a1a1a);
+    }
+    .header {
+      height: 60vh;
+      width: 100%;
+      display: flex;
+    }
+    .headerAndColumn{
+      width: 100%;
+      height: 200vh;
+    }
+    .secondColumn {
+      width: 100%;
+      height: 100vh;
+    }
+    .thirdColumn {
+      width: 100%;
+      height: 100vh;
+    }
+    .naviButton{ 
+      display: none;
+    }
+    .theLastColumn {
+      height: auto;
+      width: 100vw;
+      display: flex;
+    }
+    .columnOneTwoThree{
+      width: 100%;
+      height: AUTO;
+    }
+    .secondPartColumnGridInside {
+      height: AUTO;
+    }
+  }
+  
+
+
+  
+  @media (max-width: 999px) and (orientation: portrait) {
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Corrected font-family */
+      background: linear-gradient(45deg, #323232, #1a1a1a);
+    }
+    header{
+      height: 20vh;
+      width: 100%;
+    }
+   .textUnderButtonOneLearnMore {
+     font-size: 1.5rem;
+     }
+     .headerAndColumn{
+      width: 100%;
+      height: 100vh;
+    }
+    .secondColumn {
+      width: 100%;
+      height: 50vh;
+    }
+    .thirdColumn {
+      width: 100%;
+      height: 50vh;
+    }
+    .naviButton{ 
+      display: none;
+    }
+    .theLastColumn {
+      height: auto;
+      width: 100vw;
+      display: flex;
+    }
+    .columnOneTwoThree{
+      width: 100vw;
+      height: AUTO;
+    }
+    .secondPartColumnGridInside {
+      height: auto;
+    }
+    .gridTwoElement {
+      height: 25vh;
+    }
+    .gridGallery {
+      height: 25vh;
+    }
+  }
+  

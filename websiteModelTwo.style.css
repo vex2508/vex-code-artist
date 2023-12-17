@@ -1,0 +1,1137 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to bottom, #fdfafa, #dcdddf);
+  
+  }
+  
+  .backgroundOverlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100vw;
+      height: 100vh;
+    z-index: 2;
+  }
+  
+  .backgroundOverlayTwo {
+      background-color: rgba(0, 0, 0, 0.1);
+      width: 100vw;
+      height: auto;
+    z-index: 2;
+  }
+  
+  .headerAndColumn{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .secondColumn {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  
+  
+  .header {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    background: linear-gradient(to bottom, cadetblue, #333333);
+  }
+  
+  .logo {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .logoPicture {
+    width: 10rem;
+    height: 15rem;
+    background-image: url('img/vexLogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  
+  .contacts {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .buttonSearchHolder {
+    margin-right: auto;
+    margin-left: auto;
+    margin: 2rem;
+  }
+  
+  .language {
+    font-size: 1rem;
+    color: brown;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, lightgray, white);
+    padding: 1rem;
+    display: inline;
+    visibility: hidden;
+  }
+  .language:hover {
+    background: linear-gradient(to bottom, white, lightgray);
+  }
+  .contactUs {
+    font-size: 1rem;
+    background: linear-gradient(to bottom right, red, darkred);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .contactUs:hover {
+    background: linear-gradient(to bottom right, darkred, red);
+  }
+  .linksBellowButtonSearchHolder a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-left: 0.25rem solid white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .linksBellowButtonSearchHolder a:hover{
+    color: red;
+  }
+  
+  .firstColumn {
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #niceGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    transition: transform 1s ease-in-out;
+    grid-template-areas: 
+    "one  two three four five";
+    width: 500%;
+    height: 60vh;
+  }
+
+
+
+#daughterOne{
+background-image: url('websiteModelTwoImage/horusPhotoOne.jpg');
+grid-area: one;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+
+}
+
+#daughterTwo{
+  background-image: url('websiteModelTwoImage/horusPhotoTwo.jpg');
+  grid-area: two;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#daughterThree{
+  background-image: url('websiteModelTwoImage/horusPhotoThree.jpg');
+  grid-area: three;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#daughterFour{
+  background-image: url('websiteModelTwoImage/horusPhotoFour.jpg');
+  grid-area: four;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#daughterFive{
+  background-image: url('websiteModelTwoImage/horusPhotoFive.jpg');
+  grid-area: five;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+  .holderButtonVex{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 73.75vh;
+    z-index: 2;
+  }
+
+  .holderButtonVex button{
+    border-radius: 50%;
+    color: red;
+    font-size: 0.75rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    font-family: fantasy;
+    z-index: 1;
+  }
+
+
+  #buttonVexBlock {
+    z-index: 2;
+    position: absolute;
+    top: 73.75vh;
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+  
+  .firstColumnImgAndText {
+    height: 100%;
+    width: 100vw;
+    background-image: url('websiteModelOneImage/wilcraftFirstColumn.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  #firstLineText {
+    padding-left: 5%;
+    padding-top: 2.5%;
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 0;
+    color:black;
+  }
+  
+  
+  #secondLineText {
+    padding-left: 5%;
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    color:white;
+  }
+  
+  .buttonLearnMoreOne {
+    margin-left: 5%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: linear-gradient(to bottom right, red, darkred);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: line-through;
+  }
+  
+  .buttonLearnMoreOne:hover {
+    background: linear-gradient(to bottom right, darkred, red);
+  }
+
+  .textUnderButtonOneLearnMore {
+    color: white;
+    margin-left: 2.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .columnOneTwoThree {
+    width: 80%;
+    height: 20vh;
+    display: grid;
+    grid-template-areas: 
+    "fir sec thi";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5%;
+  }
+  
+  .firstPartColumn{
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    border-right: 0.25rem solid white;
+    padding-right: 5%;
+  }
+  
+  .firstPartColumn img  {
+    width: 10rem;
+    height: 7.5rem;
+    cursor: pointer;
+  }
+  
+  .firstPartColumn a {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .secondPartColumn{
+    flex-grow: 1;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .secondPartColumn a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .thirdPartColumn{
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 5%;
+    border-left: 0.25rem solid white;
+  }
+  
+  
+  .secondPartColumnGridInside {
+  display: grid;
+  width: 80%;
+  height: 80%;
+  grid-template-areas: 
+  "one two" 
+  "thre";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .thirdPartColumnBox {
+    width: 50%;
+    height: auto;
+    border: 0.20rem dotted white;
+    border-radius: 5%;
+    margin-top: 5%;
+    padding: 0.5rem;
+  }
+  .subscribe {
+    margin-top: 2.5%;
+    background: linear-gradient(to bottom right, red, darkred);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .subscribe:hover {
+    background: linear-gradient(to bottom right, darkred, red);
+  }
+  
+  h2{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+  }
+  
+  p{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+  }
+  .theLastColumn {
+    width: 100%;
+    height: 30vh;
+    text-align: left;
+    color: white;
+    background: linear-gradient(to top, cadetblue, #333333);
+  }
+
+.sixCircleContainer {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.sixCircleContainerDaughter {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'one two three four five six seven eight';
+  text-align: center;
+  cursor: grab;
+}
+
+
+.circleMother {
+  width: 10rem;
+  height: 15rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.circleMother div{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, rgb(163, 57, 57) 50%, darkred 50%);
+  padding: 0;
+  overflow: hidden;
+}
+
+.circleOneDaughter {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color:rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+#circleOne{
+  grid-area: one;
+}
+
+#circleOneDaughter {
+  background-image: url('websiteModelTwoImage/circleImgOne.png');
+  background-size: 75% 50%;
+}
+
+#circleTwo{
+  grid-area: two;
+}
+
+#circleTwoDaughter {
+  background-image: url('websiteModelTwoImage/circleImgTwo.png');
+  background-size: 200% 200%;
+}
+
+#circleThree{
+  grid-area: three;
+}
+
+#circleThreeDaughter {
+  background-image: url('websiteModelTwoImage/circleImgThree.png');
+  background-size: 100% 100%;
+}
+
+#circleFour{
+  grid-area: four;
+}
+
+#circleFourDaughter {
+  background-image: url('websiteModelTwoImage/circleImgFour.png');
+  background-size: 100% 100%;
+}
+
+#circleFive{
+  grid-area: five;
+}
+
+#circleFiveDaughter {
+  background-image: url('websiteModelTwoImage/circleImgFive.png');
+  background-size: 75% 75%;
+}
+
+#circleSix{
+  grid-area: six;
+}
+
+#circleSixDaughter {
+  background-image: url('websiteModelTwoImage/circleImgSix.png');
+  background-size: 125% 75%;
+}
+
+
+#circleSeven{
+  grid-area: seven;
+}
+
+#circleSevenDaughter {
+  background-image: url('websiteModelTwoImage/circleImgSeven.png');
+  background-size: 75% 75%;
+}
+
+#circleEight{
+  grid-area: eight;
+}
+
+#circleEightDaughter {
+  background-image: url('websiteModelTwoImage/circleImgEight.png');
+  background-size: 100% 100%;
+}
+
+
+.sixCircleContainerMobile {
+  display: none;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.sixCircleContainerDaughterMobile {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'one two three four five six seven eight';
+  text-align: center;
+}
+
+.circleMotherMobile{
+  width: 20rem;
+  height: 30rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.circleMotherMobile div{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, rgb(163, 57, 57) 50%, darkred 50%);
+}
+
+.circleOneDaughterMobile {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color:rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#circleOneMobile{
+  grid-area: one;
+}
+
+#circleOneDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgOne.png');
+  background-size: 75% 50%;
+}
+
+#circleTwoMobile{
+  grid-area: two;
+}
+
+#circleTwoDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgTwo.png');
+  background-size: 200% 200%;
+}
+
+#circleThreeMobile{
+  grid-area: three;
+}
+
+#circleThreeDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgThree.png');
+  background-size: 100% 100%;
+}
+
+#circleFourMobile{
+  grid-area: four;
+}
+
+#circleFourDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgFour.png');
+  background-size: 100% 100%;
+}
+
+
+#circleFiveMobile{
+  grid-area: five;
+}
+
+#circleFiveDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgFive.png');
+  background-size: 75% 50%;
+}
+
+#circleSixMobile{
+  grid-area: six;
+}
+
+#circleSixDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgSix.png');
+  background-size: 125% 75%;
+}
+
+#circleSevenMobile{
+  grid-area: seven;
+}
+
+#circleSevenDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgSeven.png');
+  background-size: 75% 75%;
+}
+
+#circleEightMobile{
+  grid-area: eight;
+}
+
+#circleEightDaughterMobile {
+  background-image: url('websiteModelTwoImage/circleImgEight.png');
+  background-size: 100% 100%;
+}
+
+
+.fourCubeContainer {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+  border: 0.15rem solid rgb(172, 171, 171);
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+
+.fourCubeContainerDaughter {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'one two three four five six seven eight';
+  text-align: left;
+  cursor: grab;
+}
+
+
+.cubeMother {
+  width: 18rem;
+  height: 30rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+}
+
+
+.cubeMother div{
+  width: 18rem;
+  height: 20rem;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
+.cubeOneDaughter {
+  width: 18rem;
+  height: 20rem;
+  background-color:rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: grab;
+}
+
+#cubeOne{
+  grid-area: one;
+}
+
+#cubeOneDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageOne.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeTwo{
+  grid-area: two;
+}
+
+#cubeTwoDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageTwo.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeThree{
+  grid-area: three;
+}
+
+#cubeThreeDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageThree.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeFour{
+  grid-area: four;
+}
+
+#cubeFourDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageFour.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeFive{
+  grid-area: five;
+}
+
+#cubeFiveDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageFive.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeSix{
+  grid-area: six;
+}
+
+#cubeSixDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageSix.jpg');
+  background-size: 100% 100%;
+}
+
+
+#cubeSeven{
+  grid-area: seven;
+}
+
+#cubeSevenDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageSeven.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeEight{
+  grid-area: eight;
+}
+
+#cubeEightDaughter {
+  background-image: url('websiteModelTwoImage/cubeImageEight.jpg');
+  background-size: 100% 100%;
+}
+
+.fourCubeContainerMobile {
+  display: none;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+  border: 0.15rem solid rgb(172, 171, 171);
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+
+.fourCubeContainerDaughterMobile {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'one two three four five six seven eight';
+  text-align: center;
+}
+
+.cubeMotherMobile{
+  width: 24rem;
+  height: 40rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.cubeMotherMobile div{
+  width: 24rem;
+  height: 30rem;
+}
+
+.cubeOneDaughterMobile {
+  width: 24rem;
+  height: 30rem;
+  background-color:rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+
+
+#cubeOneMobile{
+  grid-area: one;
+}
+
+#cubeOneDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageOne.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeTwoMobile{
+  grid-area: two;
+}
+
+#cubeTwoDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageTwo.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeThreeMobile{
+  grid-area: three;
+}
+
+#cubeThreeDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageThree.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeFourMobile{
+  grid-area: four;
+}
+
+#cubeFourDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageFour.jpg');
+  background-size: 100% 100%;
+}
+
+
+#cubeFiveMobile{
+  grid-area: five;
+}
+
+#cubeFiveDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageFive.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeSixMobile{
+  grid-area: six;
+}
+
+#cubeSixDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageSix.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeSevenMobile{
+  grid-area: seven;
+}
+
+#cubeSevenDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageSeven.jpg');
+  background-size: 100% 100%;
+}
+
+#cubeEightMobile{
+  grid-area: eight;
+}
+
+#cubeEightDaughterMobile {
+  background-image: url('websiteModelTwoImage/cubeImageEight.jpg');
+  background-size: 100% 100%;
+}
+
+.proMob{
+  font-size: 2rem;
+}
+
+#cartMother{
+  color: white;
+  width: 50%;
+    height: auto;
+    padding: 2.5%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    border-radius: 15%;
+    background-color: rgba(211, 173, 173, 0.5);
+    display: none;
+    grid-template-areas: 
+    "fir fir fir fir fir fir fir fir plu qua min sec del"
+    "siz siz con con con con con thi thi thi thi thi thi";
+    border: 0.25rem solid rosybrown;
+    grid-template-columns: 1fr 1fr 1r 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row: 5fr 1fr;
+    gap: 0.25rem;
+}
+
+#cart{
+  grid-area: fir;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#price{
+  grid-area: sec;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#plus{
+  grid-area: plu;
+  display: flex;
+  flex-direction: column;
+}
+
+#minus{
+  grid-area: min;
+  display: flex;
+  flex-direction: column;
+}
+
+#quantity{
+  grid-area: qua;
+  display: flex;
+  flex-direction: column;
+}
+
+#size{
+  grid-area: siz;
+  border-color: white;
+  width: 100%;
+  background-color: rgb(220, 228, 225, 0.2);
+  background-image: url('websiteModelTwoImage/size.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: red;
+  font-size: 2rem;
+}
+
+#cont{
+  grid-area: con;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: white;
+  width: 100%;
+  background-color: rgb(220, 228, 225, 0.2);
+  color: red;
+  font-size: 2rem;
+}
+
+#saldo{
+  grid-area: thi;
+  color: red;
+  font-size: 2rem;
+  text-align: right;
+}
+
+#clear{
+  grid-area: del;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+  @media (max-width: 1025px) {
+   
+
+    .language{
+      font-size: 1.5rem;
+    }
+    .contactUs{
+      font-size: 1.5rem;
+    }
+    .linksBellowButtonSearchHolder a{
+      font-size: 1.5rem;
+    }
+  
+  
+  
+  @media (max-width: 1025px) and (orientation: landscape) {
+    .header {
+      height: 60vh;
+      width: 100%;
+    }
+
+    #niceGallery{
+      height: 90vh;
+    }
+
+    .holderButtonVex{
+      top: 140vh;
+    }
+
+    #buttonVexBlock {
+      top: 140vh;
+    }
+
+    .headerAndColumn{
+      width: 100%;
+      height: auto;
+    }
+
+    .firstColumn {
+      height: 100vh;
+      width: 100%;
+    }
+    .textUnderButtonOneLearnMore {
+      font-size: 1rem;
+      }
+
+      .sixCircleContainer {
+        display: none;
+       }
+    
+    
+       .sixCircleContainerMobile{
+        display: block;
+       }
+
+       .fourCubeContainer {
+        display: none;
+       }
+    
+       .fourCubeContainerMobile{
+        display: block;
+       }
+    
+      .theLastColumn {
+        height: auto;
+        width: 100%;
+      }
+      .columnOneTwoThree{
+        width: 100%;
+        height: AUTO;
+      } 
+      #cart{
+    
+        font-size: 1rem;
+      
+      }
+      
+      #price{
+      
+        font-size: 1rem;
+       
+      }
+      
+      
+      
+      #saldo{
+       
+        font-size: 2.5rem;
+      }
+
+      #cartMother{
+        width: 90%;
+      }
+      
+      
+  }
+  
+  
+  
+  @media (max-width: 1025px) and (orientation: portrait) {
+    .header{
+      height: 20vh;
+      width: 100%;
+    } 
+#niceGallery{
+  height: 35vh;
+}
+
+.holderButtonVex{
+  top: 51.25vh;
+}
+#buttonVexBlock {
+  top: 51.25vh;
+}
+
+  
+   .textUnderButtonOneLearnMore {
+     font-size: 1.5rem;
+     }
+     .headerAndColumn{
+      width: 100%;
+      height: auto;
+    }
+    .firstColumn {
+      height: 37.5vh;
+      width: 100%;
+    }
+  
+   .backgroundOverlay{
+    height: 50vh;
+   }
+  
+   .sixCircleContainer {
+    display: none;
+   }
+
+   .sixCircleContainerMobile{
+    display: block;
+   }
+
+   .fourCubeContainer {
+    display: none;
+   }
+
+   .fourCubeContainerMobile{
+    display: block;
+   }
+
+    .theLastColumn {
+      height: auto;
+      width: 100%;
+    }
+    .columnOneTwoThree{
+      width: 100%;
+      height: AUTO;
+    }
+
+    #cart{
+    
+      width: auto;
+    }
+    
+    #price{
+     width: auto;
+    }
+    
+    
+    
+    #saldo{
+     
+      font-size: 2.5rem;
+    }
+
+
+    #cartMother{
+      width: 90%;
+    }
+   
+   
+  }
+  }
+
+
