@@ -761,7 +761,7 @@ p{
 }
 
 
-@media (max-width: 999px) {
+@media (max-width: 1200px) {
 
   body {
     width: 100%;
@@ -783,7 +783,7 @@ p{
 
 
 
-@media (max-width: 999px) and (orientation: landscape) {
+@media (max-width: 1200px) and (orientation: landscape) {
 
 
   body {
@@ -856,7 +856,7 @@ p{
 
 
 
-@media (max-width: 999px) and (orientation: portrait) {
+@media (max-width: 1200px) and (orientation: portrait) {
 
 
   body {
@@ -866,7 +866,7 @@ p{
     overflow-x: hidden;
   }
 
-  header{
+  .header{
     height: 20vh;
     width: 100%;
   }

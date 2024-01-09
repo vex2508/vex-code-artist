@@ -66,11 +66,18 @@ learnMoreTwoSerbianBtn.addEventListener('click', () => {
     window.location.href = 'https://vex-code-artist.neocities.org/webAppModelOne';
 });
 
-const websiteModelOne = document.querySelector('#websiteModelOne');
+const webAppModelOne = document.querySelector('#webAppModelOne');
 
-websiteModelOne.addEventListener('click', () => {
+webAppModelOne.addEventListener('click', () => {
     window.location.href = 'https://vex-code-artist.neocities.org/webAppModelOne';
 });
+
+const webAppModelOne2 = document.querySelector('#webAppModelOne2');
+
+webAppModelOne2.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/webAppModelOne';
+});
+
 
 
 contactEnglishBtn.addEventListener('click', () => {
@@ -80,3 +87,30 @@ contactEnglishBtn.addEventListener('click', () => {
   contactSerbianBtn.addEventListener('click', () => {
     window.location.href = 'https://vex-code-artist.neocities.org/vexSubscribe';
   });
+
+
+  const webAppModelTwo = document.querySelector('#webAppModelTwo');
+
+webAppModelTwo.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/webAppModelTwo';
+});
+
+
+const webAppModelTwo2 = document.querySelector('#webAppModelTwo2');
+
+webAppModelTwo2.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/webAppModelTwo';
+});
+
+const webAppModelThree = document.querySelector('#webAppModelThree');
+
+webAppModelThree.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/webAppModelThree';
+});
+
+
+const webAppModelThree2 = document.querySelector('#webAppModelThree2');
+
+webAppModelThree2.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/webAppModelThree';
+});

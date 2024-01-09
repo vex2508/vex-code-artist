@@ -174,9 +174,4 @@ gridGallery.addEventListener('click', () => {
 
   const body = document.querySelector('#body');
  
-  document.addEventListener('DOMContentLoaded', function () {
-    const body = document.querySelector('#body');
-    body.style.width = '100%';
-    body.style.overflowX = 'hidden';
-});
-
+ 

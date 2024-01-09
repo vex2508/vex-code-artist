@@ -94,7 +94,7 @@ body {
 }
 .columnMid {
   padding: 0;
-  height: 60vh;
+  height: auto;
   width: 100%;
   padding-top: 5vh;
 }
@@ -457,7 +457,7 @@ p{
 
 
 
-@media (max-width: 999px) {
+@media (max-width: 1200px) {
   .language{
     font-size: 1.5rem;
   }
@@ -475,7 +475,7 @@ p{
   }
 
 
-@media (max-width: 999px) and (orientation: landscape) {
+@media (max-width: 1200px) and (orientation: landscape) {
   .header {
     height: 60vh;
     width: 100%;
@@ -522,7 +522,7 @@ p{
 }
 
 
-@media (max-width: 999px) and (orientation: portrait) {
+@media (max-width: 1200px) and (orientation: portrait) {
   .header{
     height: 20vh;
     width: 100%;

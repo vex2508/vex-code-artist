@@ -78,6 +78,12 @@ websiteModelOne.addEventListener('click', () => {
     window.location.href = 'https://vex-code-artist.neocities.org/websiteModelOne';
 });
 
+const websiteModelOne2 = document.querySelector('#websiteModelOne2');
+
+websiteModelOne2.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/websiteModelOne';
+});
+
 contactEnglishBtn.addEventListener('click', () => {
     window.location.href = 'https://vex-code-artist.neocities.org/vexSubscribe';
   });
@@ -109,3 +115,23 @@ websiteModelTwo.addEventListener('click', () => {
     window.location.href = 'https://vex-code-artist.neocities.org/websiteModelTwo';
 });
 
+
+const websiteModelTwo2 = document.querySelector('#websiteModelTwo2');
+
+websiteModelTwo2.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/websiteModelTwo';
+});
+
+
+const websiteModelThree = document.querySelector('#websiteModelThree');
+
+websiteModelThree.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/websiteModelThree';
+});
+
+
+const websiteModelThree2 = document.querySelector('#websiteModelThree2');
+
+websiteModelThree2.addEventListener('click', () => {
+    window.location.href = 'https://vex-code-artist.neocities.org/websiteModelThree';
+});

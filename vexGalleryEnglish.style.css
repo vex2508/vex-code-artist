@@ -101,7 +101,7 @@ body {
 }
 .columnMid {
   padding: 0;
-  height: 60vh;
+  height: 80%;
   width: 100%;
   padding-top: 5vh;
 }
@@ -414,7 +414,7 @@ p{
 }
 
 
-@media (max-width: 999px) {
+@media (max-width: 1200px) {
 
   body {
     width: 100%;
@@ -441,9 +441,15 @@ p{
   .secondPartColumnGridInside {
     height: 80%;
   }
+  .columnMid {
+    padding: 0;
+    height: 80vh;
+    width: 100%;
+    padding-top: 5vh;
+  }
 }
 
-@media (max-width: 999px) and (orientation: landscape) {
+@media (max-width: 1200px) and (orientation: landscape) {
   body {
     width: 100%;
     margin: 0;
@@ -454,7 +460,7 @@ p{
   }
 
 
-  header {
+  .header {
     height: 60vh;
   }
   .headerAndColumn{
@@ -487,7 +493,7 @@ p{
 }
 
 
-@media (max-width: 999px) and (orientation: portrait) {
+@media (max-width: 1200px) and (orientation: portrait) {
   body {
     width: 100%;
     margin: 0;
@@ -498,7 +504,7 @@ p{
   }
 
 
-  header{
+  .header{
     height: 20vh;
   }
  .textUnderButtonOneLearnMore {

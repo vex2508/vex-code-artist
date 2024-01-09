@@ -99,7 +99,7 @@ body {
   }
   .columnMid {
     padding: 0;
-    height: 60vh;
+    height: auto;
     width: 100%;
     padding-top: 5vh;
   }
@@ -188,18 +188,43 @@ body {
   }
   .gridTwoElementOne{
     grid-area: fir;
-    background-image: url('webAppModelOneImage/webAppOneImageOne.JPG');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-
   }
+
   .gridTwoElementTwo{
     grid-area: sec;
-    background-image: url('webAppModelOneImage/webAppOneImageTwo.JPG');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+ 
+  
+
+  #webAppModelOne {
+    background-image: url('webAppModelOneImage/webAppOneImageOne.JPG');
+  }
+  
+  #webAppModelOne2 {
+    background-image: url('webAppModelOneImage/webAppOneImageTwo.JPG');
+  }
+
+  #webAppModelTwo {
+    background-image: url('webAppModelTwoImage/diddyKong.gif');
+  }
+  
+  #webAppModelTwo2 {
+    background-image: url('webAppModelTwoImage/levelOneMap.png');
+  }
+  
+  #webAppModelThree {
+    background-image: url('webAppModelThreeImage/SonyaTwoArmPunch.gif');
+  }
+  
+  #webAppModelThree2 {
+    background-image: url('webAppModelThreeImage/donald-trump-dancing.gif');
   }
   
   
@@ -327,7 +352,7 @@ body {
   }
   
   
-  @media (max-width: 999px) {
+  @media (max-width: 1200px) {
     body {
       width: 100%;
       margin: 0;
@@ -355,7 +380,7 @@ body {
     }
   
   }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1200px) and (orientation: landscape) {
     body {
       width: 100%;
       margin: 0;
@@ -401,7 +426,7 @@ body {
 
 
   
-  @media (max-width: 999px) and (orientation: portrait) {
+  @media (max-width: 1200px) and (orientation: portrait) {
     body {
       width: 100%;
       margin: 0;
@@ -410,7 +435,7 @@ body {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Corrected font-family */
       background: linear-gradient(45deg, #323232, #1a1a1a);
     }
-    header{
+    .header{
       height: 20vh;
       width: 100%;
     }

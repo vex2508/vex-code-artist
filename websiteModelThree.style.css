@@ -1,0 +1,637 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: linear-gradient(to bottom, #333333, #007ACC);
+}
+
+.backgroundOverlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+	height: 100vh;
+  z-index: 2;
+}
+
+.backgroundOverlayTwo {
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 100vw;
+	height: auto;
+  z-index: 2;
+}
+
+.headerAndColumn{
+  height: 200vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+.header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  background: linear-gradient(to bottom, cadetblue, #333333);
+  margin: 0;
+}
+
+.logo {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.logoPicture {
+  width: 10rem;
+  height: 15rem;
+  background-image: url('img/vexLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.contacts {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.buttonSearchHolder {
+  margin-right: auto;
+  margin-left: auto;
+  margin: 2rem;
+}
+
+.language {
+  font-size: 1rem;
+  color: brown;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, lightgray, white);
+  padding: 1rem;
+  display: inline;
+    visibility: hidden;
+}
+
+.language:hover {
+  background: linear-gradient(to bottom, white, lightgray);
+}
+.contactUs {
+  font-size: 1rem;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.contactUs:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+.linksBellowButtonSearchHolder a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  border-left: 0.25rem solid white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.linksBellowButtonSearchHolder a:hover{
+  color: red;
+}
+
+.firstColumn {
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  color: silver;
+  text-align: center;
+}
+
+.firstColumnGrid {
+  height: 80%;
+  width: 60%;
+  display: grid;
+  grid-template-areas: 
+  "ph ph id id id id"
+  "co co id id id id"
+  "co co ex ex ex ex"
+  "co co ex ex ex ex"
+  "co co ex ex ex ex"
+  "co co fp fp fp fp";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background: linear-gradient(to right, #1a1a1a, #333333);
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0.25rem solid silver;
+  border-radius: 5%;
+}
+
+#ph {
+  grid-area: ph;
+  background-image: url('websiteModelThreeImage/vexImage.PNG');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 0.125rem dotted black;
+  background-position: center;
+  background-color: #333333;
+  border-top-left-radius: 2rem;
+}
+
+#id {
+  grid-area: id;
+  background-position: center;
+  background-color: #333333;
+  border-top-right-radius: 2rem;
+  align-self: right;
+  width: 100%;
+  color: burlywood;
+}
+
+#co {
+  grid-area: co;
+  background-color: burlywood;
+  border-bottom-left-radius: 2rem;
+  padding: 1rem;
+}
+
+.phone{
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: burlywood;
+}
+
+.phoneImage{
+  background-image: url('websiteModelThreeImage/phoneLogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  height: 50%;
+  border-radius: 100%;
+  background-color: burlywood;
+}
+
+.school{
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: burlywood;
+}
+
+.schoolImage {
+  background-image: url('websiteModelThreeImage/bbs.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  height: 50%;
+  border-radius: 100%;
+  background-color: burlywood;
+}
+
+.schoolTwo {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: burlywood;
+}
+
+.schoolImageTwo{
+  background-image: url('websiteModelThreeImage/oxford.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  height: 50%;
+  border-radius: 100%;
+  background-color: burlywood;
+}
+
+h2{
+  text-align: center;
+}
+
+.gmail{
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: burlywood;
+}
+
+.gmailImage{
+  background-image: url('websiteModelThreeImage/gmailLogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  height: 50%;
+  border-radius: 100%;
+  background-color: burlywood;
+}
+
+#ex{
+  grid-area: ex; 
+  background-color: #333333;
+  border-bottom-right-radius: 2rem;
+  color: burlywood;
+  padding: 1rem;
+}
+
+#ex li{
+  margin-top: 1rem;
+}
+
+#fp {
+  grid-area: fp;
+  background-position: center;
+  background-color: #333333;
+  border-bottom-right-radius: 2rem;
+  color: burlywood;
+}
+
+
+.buttonLearnMoreOne {
+  margin-left: 5%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: line-through;
+}
+
+.buttonLearnMoreOne:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+.textUnderButtonOneLearnMore {
+  color: white;
+  margin-left: 2.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.theLastColumn {
+  width: 100%;
+  height: 30vh;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to top, cadetblue, #333333);
+}
+
+
+.columnOneTwoThree {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  grid-template-areas: 
+  "fir sec thi";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5%;
+}
+
+.firstPartColumn{
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  border-right: 0.25rem solid white;
+  padding-right: 5%;
+}
+
+.firstPartColumn img  {
+  width: 10rem;
+  height: 7.5rem;
+  cursor: pointer;
+}
+
+.firstPartColumn a {
+  font-weight: bold;
+  color: white;
+}
+
+.secondPartColumn{
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.secondPartColumn a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.thirdPartColumn{
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 5%;
+  border-left: 0.25rem solid white;
+}
+
+
+.secondPartColumnGridInside {
+display: grid;
+width: 80%;
+height: 80%;
+grid-template-areas: 
+"one two" 
+"thre";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+margin-left: auto;
+margin-right: auto;
+}
+
+.thirdPartColumnBox {
+  width: 50%;
+  height: auto;
+  border: 0.20rem dotted white;
+  border-radius: 5%;
+  margin-top: 5%;
+  padding: 0.5rem;
+}
+
+.subscribe {
+  margin-top: 2.5%;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribe:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+
+h2{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+p{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+.columnOneTwoThree {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  grid-template-areas: 
+  "fir sec thi";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5%;
+}
+
+.firstPartColumn{
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  border-right: 0.25rem solid white;
+  padding-right: 5%;
+}
+
+.firstPartColumn img  {
+  width: 10rem;
+  height: 7.5rem;
+  cursor: pointer;
+}
+
+.firstPartColumn a {
+  font-weight: bold;
+  color: white;
+}
+
+.secondPartColumn{
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.secondPartColumn a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.thirdPartColumn{
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 5%;
+  border-left: 0.25rem solid white;
+}
+
+
+.secondPartColumnGridInside {
+display: grid;
+width: 80%;
+height: 80%;
+grid-template-areas: 
+"one two" 
+"thre";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+margin-left: auto;
+margin-right: auto;
+}
+
+.thirdPartColumnBox {
+  width: 50%;
+  height: auto;
+  border: 0.20rem dotted white;
+  border-radius: 5%;
+  margin-top: 5%;
+  padding: 0.5rem;
+}
+
+.subscribe {
+  margin-top: 2.5%;
+  background: linear-gradient(to bottom right, red, darkred);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribe:hover {
+  background: linear-gradient(to bottom right, darkred, red);
+}
+
+h2{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+p{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+
+.theLastColumn {
+  width: 100%;
+  height: 30vh;
+  text-align: left;
+  color: white;
+  background: linear-gradient(to top, cadetblue, #333333);
+}
+
+
+@media (max-width: 1200px) {
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+ 
+  .language{
+    font-size: 1.5rem;
+  }
+  .contactUs{
+    font-size: 1.5rem;
+  }
+  .linksBellowButtonSearchHolder a{
+    font-size: 1.5rem;
+  }
+
+  .firstColumnGrid {
+    width: 90%;
+    font-size: small;
+  }
+
+
+@media (max-width: 1200px) and (orientation: landscape) {
+
+
+  body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+  }
+
+  .header {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+  }
+  .headerAndColumn{
+    width: 100%;
+    height: 450vh;
+  }
+
+  .firstColumn {
+    height: 450vh;
+    width: 100%;
+  }
+
+    .theLastColumn {
+      height: auto;
+      width: 100vw;
+      display: flex;
+    }
+    .columnOneTwoThree{
+      width: 100vw;
+      height: AUTO;
+    }
+
+
+}
+
+
+
+@media (max-width: 1200px) and (orientation: portrait) {
+
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .header{
+    height: 20vh;
+    width: 100%;
+  }
+ .textUnderButtonOneLearnMore {
+   font-size: 1.5rem;
+   }
+   .headerAndColumn{
+    width: 100%;
+    height: 150vh;
+  }
+
+  .firstColumn {
+    height: 150vh;
+    width: 100%;
+  }
+
+ .backgroundOverlay{
+  height: auto;
+ }
+  .theLastColumn {
+    height: auto;
+    width: 100vw;
+    display: flex;
+  }
+  .columnOneTwoThree{
+    width: 100vw;
+    height: AUTO;
+  }
+}
+}

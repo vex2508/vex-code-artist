@@ -316,7 +316,7 @@ button:hover {
   }
 
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1200px) {
     .language{
       font-size: 1.5rem;
     }
@@ -329,7 +329,7 @@ button:hover {
   
   }
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1200px) and (orientation: landscape) {
     .header {
       height: 60vh;
       width: 100%;
@@ -353,7 +353,7 @@ button:hover {
 
 
 
-  @media (max-width: 999px) and (orientation: portrait) {
+  @media (max-width: 1200px) and (orientation: portrait) {
    body{
     height: 100vh;
     width: 100%;
@@ -361,7 +361,7 @@ button:hover {
     background-position: center;
    }
 
-   header{
+   .header{
     height: 20vh;
     width: 100%;
   }
